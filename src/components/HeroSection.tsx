@@ -134,7 +134,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
             </p>
 
             <div className="flex flex-wrap gap-2">
-                {['Web Development', 'React Expert', 'Modern UI/UX', 'Scalable Systems'].map((tag) => (
+                {['Web Development', 'React', 'Modern UI/UX', 'Scalable Systems'].map((tag) => (
                     <span key={tag} className="px-2.5 py-1 rounded-full border border-navy-light bg-navy-medium/50 text-[10px] tracking-wider text-gray-300 font-medium uppercase">
                         {tag}
                     </span>
