@@ -14,8 +14,6 @@ function App() {
     { name: 'Tailwind', level: 85 },
     { name: 'HTML', level: 95 },
     { name: 'CSS', level: 90 },
-    { name: 'MongoDB', level: 85 },
-    { name: 'MySQL', level: 80 },
   ];
 
   const projects: ProjectProps[] = [
