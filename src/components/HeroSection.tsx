@@ -51,7 +51,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
         )}
       </nav>
 
-      <div className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-16 flex items-center pt-24 lg:pt-0">
+      <div className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-16 flex items-center pt-24 pb-24 lg:py-0">
         {/* Glow effect background */}
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-navy-light/20 via-navy-dark to-navy-dark pointer-events-none" />
         
