@@ -12,8 +12,8 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
       <div className="w-full max-w-7xl px-4 md:px-8 lg:px-16 py-12 grid lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Side: Decorative & Icons */}
-        <div className="relative hidden lg:flex items-center justify-center order-2 lg:order-1">
-             <div className="relative w-full aspect-square max-w-md">
+        <div className="relative flex items-center justify-center order-2 lg:order-1 mt-8 lg:mt-0">
+             <div className="relative w-full aspect-square max-w-[300px] lg:max-w-md">
                 <div className="absolute inset-0 bg-cyan-glow/20 blur-[80px] rounded-full" />
                 {/* Floating Icons */}
                 <div className="relative z-10 w-full h-full flex items-center justify-center">
