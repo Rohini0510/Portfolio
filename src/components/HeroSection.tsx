@@ -22,7 +22,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
            {/* Desktop Menu */}
            <ul className="hidden lg:flex gap-8 text-xs font-medium tracking-widest text-gray-400">
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#hero">HOME</a></li>
-               <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#about">ABOUT</a></li>
+               {/* <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#about">ABOUT</a></li> */}
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#skills">SKILLS</a></li>
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#portfolio">PROJECTS</a></li>
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#contact">CONTACT</a></li>
@@ -95,7 +95,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
                   </div>
 
                   <div className="flex flex-wrap gap-2">
-                      {['React', 'Next.js', 'Tailwind', 'Firebase'].map((tech) => (
+                      {['React', 'Next.js', 'Tailwind', 'MongoDB', 'MySQL'].map((tech) => (
                           <span key={tech} className="px-3 py-1.5 rounded-md bg-navy-dark border border-navy-light text-xs text-gray-300 font-medium uppercase tracking-wide">
                               {tech}
                           </span>
@@ -119,7 +119,9 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
                <span className="text-navy-light">•</span>
                <span>React</span>
                <span className="text-navy-light">•</span>
-               <span>Firebase</span>
+               <span>MongoDB</span>
+               <span className="text-navy-light">•</span>
+               <span>MySQL</span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1]">
@@ -128,11 +130,11 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
             </h1>
             
             <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
-               I'm <span className="text-cyan-light font-medium">{name}</span>, a web developer specializing in modern web applications using JavaScript, React.js, Tailwind CSS, and Firebase.
+               I'm <span className="text-cyan-light font-medium">{name}</span>, a web developer specializing in modern web applications using JavaScript, React.js, Tailwind CSS, MongoDB and MySQL.
             </p>
 
             <div className="flex flex-wrap gap-2">
-                {['Web Development', 'React Expert', 'Modern UI/UX', 'Scalable Systems'].map((tag) => (
+                {['Web Development', 'React', 'Modern UI/UX', 'Scalable Systems'].map((tag) => (
                     <span key={tag} className="px-2.5 py-1 rounded-full border border-navy-light bg-navy-medium/50 text-[10px] tracking-wider text-gray-300 font-medium uppercase">
                         {tag}
                     </span>

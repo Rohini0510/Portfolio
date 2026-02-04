@@ -13,7 +13,8 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) 
         {/* Header */}
         <div className="text-center mb-12 space-y-2">
            <h2 className="text-3xl lg:text-4xl font-bold text-white">
-            <span className="text-gradient">My</span> Projects
+            <span className="text-gradient">Projects</span>
+             
           </h2>
           <p className="text-gray-400">A collection of my recent projects</p>
         </div>

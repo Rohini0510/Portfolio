@@ -52,8 +52,8 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
               <span className="text-gradient">My</span> Skills
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              I'm a passionate web developer with experience creating modern, responsive web applications.
-              I specialize in frontend development using cutting-edge technologies to deliver exceptional user experiences.
+              I'm a passionate web developer with experience in creating modern, responsive web applications.
+              I specialize in Web Development using cutting-edge technologies to deliver exceptional user experiences.
             </p>
           </div>
 

@@ -14,6 +14,8 @@ function App() {
     { name: 'Tailwind', level: 85 },
     { name: 'HTML', level: 95 },
     { name: 'CSS', level: 90 },
+    { name: 'MongoDB', level: 85 },
+    { name: 'MySQL', level: 80 },
   ];
 
   const projects: ProjectProps[] = [
@@ -53,8 +55,8 @@ function App() {
     {
       id: 5,
       title: 'Modern Portfolio Website',
-      description: 'Modern & Responsive Portfolio Website in Vue.js',
-      technologies: ['Vue.js', 'TailwindCss'],
+      description: 'Modern & Responsive Portfolio Website showcasing skills and projects.',
+      technologies: ['React', 'Tailwind CSS', 'Vite'],
       imageUrl: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Modern%20portfolio%20website%20hero%20section%2C%20creative%20design&image_size=landscape_16_9',
       status: 'IN PROGRESS',
     },
