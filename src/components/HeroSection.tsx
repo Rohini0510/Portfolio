@@ -106,7 +106,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
 
           {/* Right Content */}
           <div className="text-left space-y-4 md:space-y-6 order-1 lg:order-2">
-            <div className="text-[10px] md:text-xs font-medium tracking-[0.2em] text-cyan-glow uppercase flex flex-wrap gap-2">
+            <div className="text-xs md:text-sm font-medium tracking-[0.2em] text-cyan-glow uppercase flex flex-wrap gap-2">
                <span>Web Developer</span>
                <span className="text-navy-light">•</span>
                <span>JS</span>
@@ -124,12 +124,12 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
                <span>MySQL</span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1]">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1]">
               Building  <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-glow to-blue-500">Digital</span> Experiences.
             </h1>
             
-            <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-lg">
                I'm <span className="text-cyan-light font-medium">{name}</span>, a web developer specializing in modern web applications using JavaScript, React.js, Tailwind CSS, MongoDB and MySQL.
             </p>
 
