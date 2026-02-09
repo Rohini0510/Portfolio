@@ -10,7 +10,7 @@
 
   /* Button Components */
   .btn-primary {
-    @apply bg-blue-gradient text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-cyan-glow/50;
+    @apply bg-blue-gradient text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-cyan-glow;
   }
 
   .btn-secondary {

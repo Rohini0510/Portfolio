@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HeroSection } from './components/HeroSection';
 import { SkillsSection } from './components/SkillsSection';
 import { PortfolioSection } from './components/PortfolioSection';
 import { SkillProps, ProjectProps } from './types';
 import ContactSection from './components/ContactSection';
-import profilePhoto from './assets/my profile photo.jpeg';
+import profilePhoto from './assets/my_profile_photo.jpeg';
+import Preloader from './components/Preloader';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500); // Show preloader for 2.5 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
   const skills: SkillProps[] = [
     { name: 'React', level: 95 },
     { name: 'Next.js', level: 90 },
@@ -59,6 +69,10 @@ function App() {
       status: 'IN PROGRESS',
     },
   ];
+
+  if (loading) {
+    return <Preloader />;
+  }
 
   return (
     <div className="min-h-screen bg-navy-dark">
