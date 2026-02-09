@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, Phone } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-navy-dark border-t border-navy-light/30">
+    <section id="contact" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent border-t border-navy-light/30">
       <div className="w-full max-w-7xl px-4 md:px-8 lg:px-16 py-12">
         <div className="text-center mb-12 space-y-2">
            <h2 className="text-3xl lg:text-4xl font-bold text-white">

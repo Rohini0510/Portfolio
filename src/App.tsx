@@ -6,6 +6,7 @@ import { SkillProps, ProjectProps } from './types';
 import ContactSection from './components/ContactSection';
 import profilePhoto from './assets/my_profile_photo.jpeg';
 import Preloader from './components/Preloader';
+import BackgroundAnimation from './components/BackgroundAnimation';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -75,9 +76,9 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-navy-dark">
-      
-      <main className="w-full">
+    <div className="min-h-screen bg-black relative">
+      <BackgroundAnimation />
+      <main className="w-full relative z-10">
         <HeroSection
           name="Rohini Dambhare"
           role="Web Developer"

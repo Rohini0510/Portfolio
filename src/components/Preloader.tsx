@@ -2,7 +2,7 @@ import React from 'react';
 
 const Preloader: React.FC = () => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-navy-dark">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
       <div className="relative flex items-center justify-center w-[180px] h-[180px] font-sans text-[1.2em] font-light text-white rounded-full select-none">
         
         {/* Animated Letters */}

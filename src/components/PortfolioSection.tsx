@@ -8,7 +8,7 @@ interface PortfolioSectionProps {
 
 export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
   return (
-    <section id="portfolio" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-navy-dark">
+    <section id="portfolio" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent">
       <div className="w-full max-w-7xl px-4 md:px-8 lg:px-16 py-12">
         {/* Header */}
         <div className="text-center mb-12 space-y-2">

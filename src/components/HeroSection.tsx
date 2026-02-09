@@ -6,7 +6,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <section id="hero" className="min-h-screen flex flex-col relative overflow-hidden bg-navy-dark border-b border-navy-light/30">
+    <section id="hero" className="min-h-screen flex flex-col relative overflow-hidden bg-black border-b border-navy-light/30">
       
       {/* Top Navigation */}
       <nav className="absolute top-0 w-full z-20">
@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-navy-dark/95 backdrop-blur-xl border-b border-navy-light/30 py-4 px-4 shadow-2xl">
+          <div className="lg:hidden absolute top-full left-0 w-full border-b border-navy-light/30 py-4 px-4 shadow-2xl">
             <ul className="flex flex-col gap-4 text-sm font-medium tracking-widest text-gray-400 text-center">
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#hero" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#about" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
@@ -52,8 +52,8 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
       </nav>
 
       <div className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-16 flex items-center pt-24 pb-24 lg:py-0">
-        {/* Glow effect background */}
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-navy-light/20 via-navy-dark to-navy-dark pointer-events-none" />
+        {/* Glow effect background - REMOVED to fix blue tint */}
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-navy-light/20 via-navy-dark to-navy-dark pointer-events-none" /> */}
         
         {/* Stars Effect (Simulated) */}
         <div className="absolute inset-0 opacity-30 pointer-events-none">
@@ -134,7 +134,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
             </p>
 
             <div className="flex flex-wrap gap-2">
-                {['Web Development', 'React', 'Modern UI/UX', 'Scalable Systems'].map((tag) => (
+                {['Web Development', 'React ', 'Modern UI/UX', 'Scalable Systems'].map((tag) => (
                     <span key={tag} className="px-2.5 py-1 rounded-full border border-navy-light bg-navy-medium/50 text-[10px] tracking-wider text-gray-300 font-medium uppercase">
                         {tag}
                     </span>

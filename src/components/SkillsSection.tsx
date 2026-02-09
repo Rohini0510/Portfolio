@@ -8,7 +8,7 @@ interface SkillsSectionProps {
 
 export const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
   return (
-    <section id="skills" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-navy-dark border-b border-navy-light/30">
+    <section id="skills" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent border-b border-navy-light/30">
       <div className="w-full max-w-7xl px-4 md:px-8 lg:px-16 py-12 grid lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Side: Decorative & Icons */}
