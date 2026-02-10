@@ -30,8 +30,25 @@
   .progress-fill {
     @apply h-full bg-gradient-to-r from-cyan-glow to-blue-gradient rounded-full transition-all duration-1000;
   }
+
+  /* 3D Flip Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
 }
 
 body {
-  @apply bg-slate-950 text-white font-sans;
+  @apply bg-black text-white font-sans antialiased;
 }

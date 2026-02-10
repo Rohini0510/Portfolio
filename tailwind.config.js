@@ -22,6 +22,7 @@ export default {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'loader-rotate': 'loader-rotate 2s linear infinite',
         'loader-letter': 'loader-letter 2s infinite',
+        'marquee': 'marquee 25s linear infinite',
       },
       keyframes: {
         glow: {
@@ -54,6 +55,10 @@ export default {
           '0%, 100%': { opacity: '0.4', transform: 'translateY(0)' },
           '20%': { opacity: '1', transform: 'scale(1.15)' },
           '40%': { opacity: '0.7', transform: 'translateY(0)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },

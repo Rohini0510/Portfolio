@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroProps> = ({ name, role, description, avat
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full border-b border-navy-light/30 py-4 px-4 shadow-2xl">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-navy-dark/95 backdrop-blur-xl border-b border-navy-light/30 py-4 px-4 shadow-2xl">
             <ul className="flex flex-col gap-4 text-sm font-medium tracking-widest text-gray-400 text-center">
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#hero" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
                <li className="hover:text-cyan-glow cursor-pointer transition-colors"><a href="#about" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
