@@ -46,7 +46,7 @@ export const ProjectFlipCard: React.FC<ProjectFlipCardProps> = ({ project }) => 
             
             {/* Background Marquee Text */}
             <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none overflow-hidden select-none">
-                <div className="whitespace-nowrap animate-marquee text-[8rem] font-black uppercase leading-none">
+                <div className={`whitespace-nowrap ${isFlipped ? 'animate-marquee' : ''} text-[8rem] font-black uppercase leading-none`}>
                     {project.title} &nbsp; {project.title} &nbsp; {project.title} &nbsp;
                 </div>
             </div>
